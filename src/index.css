@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  text-align: center;
+}
+
+.Counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Controls {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+}
+
+.Controls, .Number {
+  display: felx;
+  flex-direction: column;
+}
+
+.control-button {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+

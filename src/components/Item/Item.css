@@ -1,0 +1,8 @@
+.producto {
+    border: 3px solid black;
+    border-radius: 10%;
+    background-color: rgba(200, 100, 50, 45%);
+    margin: 20px;
+    padding: 6rem;
+}
+
