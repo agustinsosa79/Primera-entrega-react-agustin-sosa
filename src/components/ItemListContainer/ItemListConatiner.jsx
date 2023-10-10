@@ -4,8 +4,7 @@ import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = ({ greeting }) => {
     const [productos, setProductos] = useState([]);
-    console.log(ItemListContainer);
-
+    
     useEffect(() => {
         getProducts()
             .then((resolve) => {

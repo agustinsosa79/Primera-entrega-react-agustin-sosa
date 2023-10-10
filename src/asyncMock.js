@@ -1,10 +1,12 @@
+import imagen from './img/camiseta-de-algodon.png'
+
 const productos = [
     {
-        id: 1,
+        id: "1",
         nombre: "Camiseta de algodón",
         precio: 15.99,
         categoria: "Camisetas",
-        imagen: "imagen1.jpg",
+        imagen: imagen,
         stock: 100,
         descripcion: "Una camiseta de algodón suave y cómoda en varios colores disponibles."
     },
@@ -188,5 +190,13 @@ const productos = [
             setTimeout(() =>{
                 resolve(productos)
             }, 500);
+        })
+    }
+
+    export const getProductsById = (productId) => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(productos.find(prod => prod.id === productId))
+            }, 500)
         })
     }
