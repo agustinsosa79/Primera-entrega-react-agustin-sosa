@@ -11,7 +11,7 @@ const productos = [
         descripcion: "Una camiseta de algodón suave y cómoda en varios colores disponibles."
     },
     {
-        id: 2,
+        id: "2",
         nombre: "Pantalones vaqueros",
         precio: 29.99,
         categoria: "Pantalones",
@@ -197,6 +197,14 @@ const productos = [
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(productos.find(prod => prod.id === productId))
+            }, 500)
+        })
+    }
+
+    export const getProductsByCategory = (productCategory) => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(productos.find(prod => prod.categoria === productCategory))
             }, 500)
         })
     }

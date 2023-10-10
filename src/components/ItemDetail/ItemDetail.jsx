@@ -2,7 +2,6 @@ import "./ItemDetail.css"
 import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({ nombre, categoria, descripcion, precio, imagen, stock }) => {
-    console.log(imagen);
     return (
         <div className='ProductDetailPage'>
             <div className='ProductDetailContainer'>
@@ -21,7 +20,7 @@ const ItemDetail = ({ nombre, categoria, descripcion, precio, imagen, stock }) =
                     <ItemCount
                         initial={1}
                         stock={stock}
-                        onAdd={(quantity) => console.log(`Se agregaron ${quantity} al carrito`)}
+                        onAdd={(quantity) => console.log(`Se agregaron ${quantity} ${nombre} al carrito`)}
                     />
                 </footer>
             </div>
