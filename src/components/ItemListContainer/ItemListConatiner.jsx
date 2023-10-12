@@ -5,19 +5,18 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({ greeting }) => {
     const [productos, setProductos] = useState([]);
+    const { categoryId } = useParams();
 
-    const { categoryId } = useParams()
-    
     useEffect(() => {
-        const asyncFunc = categoryId  ? getProductsByCategory : getProducts
-        asyncFunc(categoryId)
+        const asyncFunc = categoryId ? getProductsByCategory : getProducts;
+        asyncFunc(categoryId)  
             .then((resolve) => {
                 setProductos(resolve);
             })
             .catch((error) => {
                 console.log(error);
             });
-    }, []); 
+    }, [categoryId]);  
 
     return (
         <div>
