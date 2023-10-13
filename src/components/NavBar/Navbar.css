@@ -1,0 +1,36 @@
+/* Navbar.css */
+
+/* Estilo para el fondo del Navbar */
+.navbar {
+    background-color: black !important;
+  }
+  
+  /* Estilo para el título "Over" */
+  .navbar h1 {
+    color: white !important;
+    margin-right: 20px;
+  }
+  
+  /* Estilo para las etiquetas Link y NavLink en el Navbar */
+  .navbar a,
+  .navbarNavLink {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0 30px; /* Espacio horizontal entre enlaces */
+    white-space: nowrap; /* Evita el salto de línea */
+  }
+  
+  /* Estilo para los enlaces activos en el Navbar (cuando la página está en esa ruta) */
+  .navbar .activeOption {
+    font-weight: bold !important;
+  }
+  
+  /* Estilo para el contenedor de enlaces de categorías */
+  .category-links {
+    display: flex; /* Mostrar enlaces de categorías en línea */
+  }
+  
+  /* Estilo para separar los enlaces de categorías */
+  .category-links .option {
+    margin-right: 15px; /* Espacio horizontal entre enlaces de categorías */
+  }

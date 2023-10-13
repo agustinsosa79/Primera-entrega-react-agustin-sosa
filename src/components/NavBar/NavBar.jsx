@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
+import './Navbar.css';
 
 const NavBar = () => {
     return (
@@ -24,7 +25,7 @@ const NavBar = () => {
                         <NavLink
                             to={"/categoria/remeras"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "Option"
+                                isActive ? "activeOption" : "option"
                             }
                         >
                             remeras
@@ -32,7 +33,7 @@ const NavBar = () => {
                         <NavLink
                             to={"/categoria/pantalones"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "Option"
+                                isActive ? "activeOption" : "option"
                             }
                         >
                             pantalones
@@ -40,7 +41,7 @@ const NavBar = () => {
                         <NavLink
                             to={"/categoria/buzos"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "Option"
+                                isActive ? "activeOption" : "option"
                             }
                         >
                             buzos
@@ -48,15 +49,15 @@ const NavBar = () => {
                         <NavLink
                             to={"/categoria/camperas"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "Option"
+                                isActive ? "activeOption" : "option"
                             }
                         >
                             camperas
                         </NavLink>
                     </ul>
                 </div>
+                <CartWidget />
             </div>
-            <CartWidget />
         </nav>
     );
 };

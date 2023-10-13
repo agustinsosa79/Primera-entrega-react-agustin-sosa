@@ -1,7 +1,7 @@
 .producto {
     border: 3px solid black;
     border-radius: 10%;
-    background-color: rgba(200, 100, 50, 45%);
+    background-color: white;
     margin: 20px;
     padding: 6rem;
 }
@@ -12,4 +12,27 @@
     display: block;
     margin: 0 auto;
 }
+
+
+.Option {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Option:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+
 
