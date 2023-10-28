@@ -75,12 +75,12 @@ const productos = [
     },
     {
         id: "9",
-        nombre: "Traje de baño",
+        nombre: "Buzo largo",
         precio: 34.99,
         categoria: "buzos",
         imagen: "https://http2.mlstatic.com/D_973382-MLA43784089403_102020-O.jpg",
         stock: 25,
-        descripcion: "Un traje de baño moderno y cómodo para la playa."
+        descripcion: "Buzo blanco largo en las mangas, y hasta debajo de la cintura"
     },
     {
         id: "10",
@@ -165,7 +165,7 @@ const productos = [
     },
     {
         id: "19",
-        nombre: "Pantalon cort / cargo",
+        nombre: "Pantalon corto / cargo",
         precio: 16.99,
         categoria: "pantalones",
         imagen: "https://m.media-amazon.com/images/I/71juERJjUFS._AC_UY1000_.jpg",
