@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <Link to={"/"}>
-                    <h1>Over</h1>
+                    <h1 className="titulo">Urban shop</h1>
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -25,34 +25,34 @@ const NavBar = () => {
                         <NavLink
                             to={"/categoria/remeras"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "option"
+                                isActive ? "activeOption  l-producto" : "option l-producto"
                             }
                         >
-                            remeras
+                            Remeras
                         </NavLink>
                         <NavLink
                             to={"/categoria/pantalones"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "option"
+                                isActive ? "activeOption l-producto" : "option l-producto"
                             }
                         >
-                            pantalones
+                            Pantalones
                         </NavLink>
                         <NavLink
                             to={"/categoria/buzos"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "option"
+                                isActive ? "activeOption l-producto" : "option l-producto"
                             }
                         >
-                            buzos
+                            Buzos
                         </NavLink>
                         <NavLink
                             to={"/categoria/camperas"}
                             className={({ isActive }) =>
-                                isActive ? "activeOption" : "option"
+                                isActive ? "activeOption l-producto" : "option l-producto"
                             }
                         >
-                            camperas
+                            Camperas
                         </NavLink>
                     </ul>
                 </div>

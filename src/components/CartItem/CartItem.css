@@ -1,4 +1,21 @@
-.item-details{
-    color: #fff;
+.cart-item {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
 
+.item-details {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.item-details h5 {
+    font-weight: bold;
+    border-bottom: 3px solid #c711ce;
+    border-radius: 5%;
 }

@@ -12,12 +12,12 @@ const Cart = () => {
 
 <div>
       {cart.length === 0 ? (
-        <div>
+        <div className='cart-items'>
           <h1>No hay elementos en el carrito</h1>
           <Link to="/" className='Option'>Productos</Link>
         </div>
       ) : (
-        <div>
+        <div className='cart-items'>
           {cart.map((item) => (
             <CartItem key={item.id} item={item} />
           ))}

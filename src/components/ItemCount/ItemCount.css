@@ -1,0 +1,27 @@
+.boton-count{
+    width: 100%;
+    height: 40px;
+    background-color: #c711ce;
+    border: 3px solid #c711ce;
+}
+.boton-count:hover{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    color: #c711ce;
+    border: 3px solid #c711ce;
+}
+.boton-count:active{
+    background-color: #fff;
+}
+
+.boton-agregar{
+    background-color: #c711ce;
+    border: none;
+    font-weight: bolder;
+}
+.boton-agregar:hover{
+    background-color: #fff;
+    color: #c711ce;
+    border: 3px solid #c711ce;
+}
